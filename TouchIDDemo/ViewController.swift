@@ -25,6 +25,7 @@ class ViewController: UIViewController {
             
                 if success {
                         print ("User has authenticated")
+                    self.performSegue(withIdentifier: "toSecondController", sender: nil)
                 } else {
                     if let error = error {
                         print (error)
