@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             authenticationContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Authenticate with Touch ID") { (success, error) in
             
                 if success {
-                        print ("User has authenticated")
+                    print ("User has authenticated")
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "toSecondController", sender: nil)
                     }
